@@ -47,6 +47,6 @@ export const Color=
       darktext:'text-yellow-500',
       darkbg:'bg-black',
       darksecbg:'bg-yellow-300',
-      darkshadow:'shadow-yellow-700 shadow-2xl',
+      darkshadow:'shadow-yellow-900 shadow-2xl',
       darkborder:'border-2 border-yellow-300'
    }
