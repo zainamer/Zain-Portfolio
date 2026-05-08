@@ -7,7 +7,8 @@ const About = ({theme}) => {
     <div id='about' className=' flex flex-col gap-5 items-center sm:flex-row px-10 md:px-20  '>
       <div className="flex flex-col flex-1/2 gap-5">
       <h1 className={`text-4xl md:text-6xl  font-bold  ${theme==='dark' ? Color.darktext : Color.lighttext}`}>About Me</h1>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut accusamus a temporibus magnam expedita aspernatur, sed omnis, asperiores at rerum commodi odit distinctio in corrupti delectus voluptates voluptatum nulla excepturi iure ipsa! Vitae, voluptatum!</p>
+      <p>I’m a passionate Frontend Developer with a strong interest in building modern, responsive, and user-friendly web applications. I enjoy turning ideas into interactive digital experiences using technologies like React.js, JavaScript, and Tailwind CSS.</p>
+      <p>I have worked on multiple frontend projects that helped me improve my skills in UI design, responsive layouts, and component-based development. I’m continuously learning new technologies and exploring better ways to create clean and efficient user experiences.</p>
       <div className="flex gap-5">
          <div className="">
             <h1 className={`text-4xl md:text-6xl  font-bold  ${theme==='dark' ? Color.darktext : Color.lighttext}`}>5+</h1>

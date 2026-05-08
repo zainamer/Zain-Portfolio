@@ -22,10 +22,16 @@ import java from './java.png'
 import flutter from './flutter.png'
 import python from './python.png'
 
+import project1 from './project1.jpg'
+import project2 from './project2.png'
+
 export const logos={
    react,javascript,angular,bootstrap,tailwind,html,java,css,python,flutter
 }
 
+export const projects={
+ project1,project2
+}
 
 export const imgs={
    menuL,menuD,

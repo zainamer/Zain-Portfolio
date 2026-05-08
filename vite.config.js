@@ -6,15 +6,12 @@ import tailwindcss from '@tailwindcss/vite'
 export default defineConfig({
   plugins: [react(),tailwindcss()],
   base:'/Zain-Portfolio/',
-  theme: {
-    extend: {
-      colors: {
-        background: "#FFFFFF",
-        text: "#0F172A",       // dark navy
-        secondary: "#475569",  // steel gray
-        accent: "#1E3A8A",     // deep blue
-      },
+  server: {
+    watch: {
+      usePolling: true,
+      interval: 100, // check every 100ms
     },
   },
+
 })
 

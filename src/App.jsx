@@ -3,7 +3,8 @@ import Navbar from './components/Navbar'
 import Home from './components/Home';
 import About from './components/About';
 import Skills from './components/Skills';
-import Projects from './components/projects';
+import Projects from './components/Projects';
+import Contact from './components/Contact';
 
 const App = () => {
 
@@ -18,6 +19,7 @@ const App = () => {
       <About theme={theme}/>
       <Skills theme={theme}/>
       <Projects theme={theme}/>
+      <Contact theme={theme}/>
     </div>
   )
 }

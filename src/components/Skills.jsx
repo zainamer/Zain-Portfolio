@@ -1,6 +1,7 @@
 import React from 'react'
 import { Color, imgs, logos } from '../assets/assets'
 import SkillCard from './SkillCard'
+import Title from './Title'
 
 const Skills = ({theme}) => {
 
@@ -59,12 +60,9 @@ const Skills = ({theme}) => {
 
 
   return (
-    <div className='px-10 md:px-20'>
-      <div className=" flex flex-col items-center">
-      <h1 className='text-4xl lg:text-6xl font-bold'>My <span className={`${theme==='dark'? Color.darktext : Color.lighttext} `}>Skills</span></h1>
-      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis, ducimus recusandae?</p>
-      </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 p-6">
+    <div id='skills' className='px-10 md:px-20'>
+      <Title theme={theme} title1={"My"} title2={"Skills"} description={"These are the technical and creative skills I use to build responsive, user‑friendly web applications and solve real‑world problems."}/>
+      <div className="grid place-items-center grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 p-6">
         {skillsData.map((items,index)=>(
         <SkillCard theme={theme} items={items} index={index} />
 

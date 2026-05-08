@@ -10,15 +10,24 @@ const Home = ({theme}) => {
       </div>
       <div className=" p-10 md:p-20 flex sm:flex-1/2  gap-5 flex-col items-center sm:items-start">
          <div className="flex gap-2 h-8 ">
-          <img src={imgs.insta} alt="" />
-          <img src={imgs.github} alt="" />
-          <img src={imgs.linkedin} alt="" />
-          <img src={imgs.fb} alt="" />
+          <a href="https://www.instagram.com/vib3with.zain?igsh=cmlteHdpZjE5bG8x">
+          <img className='w-8' src={imgs.insta} alt="" />
+          </a>
+
+          <a href="">
+          <img className='w-8' src={imgs.github} alt="" />
+          </a>
+          <a href="">
+          <img className='w-8' src={imgs.linkedin} alt="" />
+          </a>
+          <a href="">
+          <img className='w-8' src={imgs.fb} alt="" />
+          </a>
          </div>
-         <h1 className='text-xl font-bold'><span className={`${theme==='dark'? Color.darktext : Color.lighttext} text-4xl lg:text-6xl`}>Hi,</span> i'm Shaik Zain Amer</h1>
-         <p className='text-center sm:text-start'>a passionate Full-Stack Developer focused on building responsive, scalable, and user-friendly web applications. I enjoy turning ideas into real products using modern technologies like React, JavaScript, Tailwind CSS, and backend development. I'm actively looking for opportunities to grow, collaborate, and contribute to impactful projects.</p>
+         <h1 className='md:text-2xl font-bold'><span className={`${theme==='dark'? Color.darktext : Color.lighttext} text-4xl lg:text-6xl`}>Hi,</span > i'm Shaik Zain Amer</h1>
+         <p className='text-center sm:text-start text-lg'>I build responsive, modern, and user-friendly web applications using React.js, JavaScript, and Tailwind CSS. Passionate about creating clean UI and interactive user experiences.</p>
          <button className={`${theme==='dark'? Color.darkbtn : Color.lightbtn} py-2  w-50 `}>Download CV</button>
-         <button className={`${theme==='dark'? Color.darkbtn : Color.lightbtn} py-2  w-50`}>Contact Me</button>
+         <button className={`${theme==='dark'? Color.darkbtn : Color.lightbtn} py-2  w-50`}> <a href="#contact">Contact me</a> </button>
       </div>
       
     </div>
