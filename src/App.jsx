@@ -1,25 +1,22 @@
-import React, { useState } from 'react'
 import Navbar from './components/Navbar'
-import Home from './components/Home';
 import About from './components/About';
 import Skills from './components/Skills';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
+import { Route, Routes } from 'react-router-dom';
+import Hero from './Hero';
+import Demo from './components/Demo';
 
 const App = () => {
 
-  const [theme,SetTheme] = useState(localStorage.getItem('theme')?localStorage.getItem('theme') : 'light');
-
   return (
+    <div className='bg-black text-white'>
+      <Routes>
+        <Route path='/' element={<Hero/>} />
+      </Routes>
 
 
-    <div className=' dark:bg-black dark:text-white flex flex-col gap-10 '>
-      <Navbar theme={theme} setTheme={SetTheme}/>
-      <Home theme={theme}/>
-      <About theme={theme}/>
-      <Skills theme={theme}/>
-      <Projects theme={theme}/>
-      <Contact theme={theme}/>
+      {/* <Demo/> */}
     </div>
   )
 }

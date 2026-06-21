@@ -2,32 +2,27 @@ import React from 'react'
 import { imgs } from '../assets/assets'
 import { Color } from '../assets/assets'
 
-const Home = ({theme}) => {
+const Home = () => {
   return (
-    <div className='sm:flex items-center md:h-[80vh] md:w-screen pt-5 sm:pt-20 '>
-      <div className="flex sm:flex-1/2   items-center justify-center">
-         <img className='h-full w-full object-cover object-top z-0' src={imgs.me} alt="" />
+    
+    <div className='w-screen lg:h-screen sm:pt-10 lg:pt-2 sm:flex gap-2 items-center justify-center '>
+      
+      <div className="h-110 sm:h-full overflow-clip sm:w-1/2">
+         <img className='' src={imgs.me} alt="" />
       </div>
-      <div className=" p-10 md:p-20 flex sm:flex-1/2  gap-5 flex-col items-center sm:items-start">
-         <div className="flex gap-2 h-8 ">
-          <a href="https://www.instagram.com/vib3with.zain?igsh=cmlteHdpZjE5bG8x">
-          <img className='w-8' src={imgs.insta} alt="" />
-          </a>
-
-          <a href="">
-          <img className='w-8' src={imgs.github} alt="" />
-          </a>
-          <a href="">
-          <img className='w-8' src={imgs.linkedin} alt="" />
-          </a>
-          <a href="">
-          <img className='w-8' src={imgs.fb} alt="" />
-          </a>
+      
+      <div className="sm:w-1/2 mr-20 ml-5 sm:ml-0 flex flex-col gap-5">
+         
+         <h1 className='raleway text-nowrap font-light text-2xl lg:text-5xl'><span className="font-bold text-5xl lg:text-9xl text-blue-800">Hi,</span > i'm Shaik Zain Amer</h1>
+         
+         <p className='text-lg lg:text-2xl font-light josefin'>I build responsive, modern, and user-friendly <br /> web applications using React.js, JavaScript, and Tailwind CSS. <br /> Passionate about creating clean UI and interactive <br />
+          user experiences.</p>
+         
+         <div className=" flex gap-5 *:text-lg *:lg:text-2xl *:border *:border-blue-500 *:px-5 *:hover:bg-blue-500 *:hover:text-black *:font-bold *:text-nowrap">
+         <button >Download CV</button>
+         
+         <button > <a href="#contact">Contact me</a> </button>
          </div>
-         <h1 className='md:text-2xl font-bold'><span className={`${theme==='dark'? Color.darktext : Color.lighttext} text-4xl lg:text-6xl`}>Hi,</span > i'm Shaik Zain Amer</h1>
-         <p className='text-center sm:text-start text-lg'>I build responsive, modern, and user-friendly web applications using React.js, JavaScript, and Tailwind CSS. Passionate about creating clean UI and interactive user experiences.</p>
-         <button className={`${theme==='dark'? Color.darkbtn : Color.lightbtn} py-2  w-50 `}>Download CV</button>
-         <button className={`${theme==='dark'? Color.darkbtn : Color.lightbtn} py-2  w-50`}> <a href="#contact">Contact me</a> </button>
       </div>
       
     </div>

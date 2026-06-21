@@ -1,9 +1,9 @@
 import React from 'react'
 import { Color } from '../assets/assets'
 
-const SkillCard = ({theme,items,index}) => {
+const SkillCard = ({items,index}) => {
   return (
-   <div key={index} className={`w-56  ${theme==='dark'? Color.darkshadow : Color.lightshadow} flex flex-col gap-3 p-1.5 rounded-2xl`}>
+   <div key={index} className="w-56 shadow-lg shadow-blue-300 flex flex-col gap-3 p-1.5 rounded-2xl">
       <div className=" flex gap-3 items-center">
        <div className="size-10 bg-gray-800 flex items-center justify-center rounded-2xl">
          <img className='size-6 ' src={items.image} alt="" />
